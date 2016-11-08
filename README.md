@@ -5,3 +5,7 @@
 ---
 스위프트 관련공부메모  
 [swift_study.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/swift_study.md)
+
+---
+iOS push 인증서만들기  
+[ios_push.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/ios_push.md)
