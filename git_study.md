@@ -60,7 +60,7 @@ git add .
 머지작업이 끝나면 rebase를 진행시킨다.
 
 ```
-git --continue
+git rebase --continue
 ```
 
 만약 문제가 생겨 rebase를 중지시키고 싶다면,
