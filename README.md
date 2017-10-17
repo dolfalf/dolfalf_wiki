@@ -14,3 +14,7 @@ iOS push 인증서만들기
 xcodebuild 명령어를 이용한 빌드하기  
 [xcodebuild.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/xcodebuild.md)
 
+---
+
+git 간단 사용법
+[git_study.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/git_study.md)
