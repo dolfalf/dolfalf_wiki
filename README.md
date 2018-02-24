@@ -19,3 +19,10 @@ xcodebuild 명령어를 이용한 빌드하기
 git 간단 사용법
 
 [git_study.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/git_study.md)
+
+
+---
+
+ruby on rails 공부메모
+
+[rubyonrails.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/rubyonrails.md)
