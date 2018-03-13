@@ -90,6 +90,41 @@ git commit -m ".gitignore is now working"
 git push origin master
 ```
 
+## 間違ったブレンチにコミットしてpushまでやってしまった時には
 
+間違ってPushしたのを戻す
+
+```
+git reset —soft HEAD^
+```
+
+戻したファイル確認
+
+```
+git status
+```
+
+強制Push(戻したファイルはコミットしてないので対象外になる)
+これによってpush前の状態になる。
+
+```
+//developの場合
+git push -f origin develop
+```
+
+新しいブレンチを作成
+修正分をベットブレンチへ反映するために
+
+```
+//ブレンチ名がbug_fix/xxxの場合
+git branch bug_fix/xxx
+```
+
+修正分コミット、そしてpush
+
+```
+git commit　-m "修正分"
+git push origin
+```
 
 
