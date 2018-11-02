@@ -127,4 +127,27 @@ git commit　-m "修正分"
 git push origin
 ```
 
+---
 
+## ブランチとブランチへのRebase
+
+git rebase --onto `くっつけるブランチ` `Rebaseしたいブランチもとのブランチ` `Rebaseしたいブランチ`
+
+例）
+```
+git rebase --onto master develop unit-test
+
+                    G - H - I(unit-test)
+                   /
+          D - E - F (develop)
+         /
+A - B - C (master)
+
+//実行後下記のようになる
+
+
+          D - E - F (develop)
+         /         
+A - B - C - (master) - G' - H' - I'(unit-test)
+
+```
