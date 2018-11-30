@@ -151,3 +151,29 @@ A - B - C (master)
 A - B - C - (master) - G' - H' - I'(unit-test)
 
 ```
+
+---
+
+## 間違ってPushしてしまい、Revertする場合
+
+> revertコマンドとは
+> すでにpushされているcommitを打ち消す(もとに戻す)コマンドの事。
+> 取り消したいコミットを打ち消すようなコミットを新しく作成する。
+
+```
+$ git revert <commit ID>
+```
+
+commitしない方法は、-nを指定する。
+* 複数のcommitを戻して、1つのcommitとしてpushする場合に便利。*
+
+```
+$ git revert <commit ID> -n
+```
+
+コミットメッセージを編集しない場合
+コミットメッセージを編集しなくていいときは --no-edit を使用する。
+
+```
+$ git revert --no-edit <commit ID>
+```
