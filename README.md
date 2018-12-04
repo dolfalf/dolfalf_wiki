@@ -11,6 +11,10 @@ iOS push 인증서만들기
 [ios_push.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/ios_push.md)
 
 ---
+iOS関連情報
+[iOS.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/iOS.md)
+
+---
 xcodebuild 명령어를 이용한 빌드하기  
 [xcodebuild.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/xcodebuild.md)
 
