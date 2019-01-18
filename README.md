@@ -4,6 +4,7 @@
 
 ---
 맥 기본
+
 [mac.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/mac.md)
 
 ---
