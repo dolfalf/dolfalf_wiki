@@ -177,3 +177,36 @@ $ git revert <commit ID> -n
 ```
 $ git revert --no-edit <commit ID>
 ```
+
+---
+
+## コミットをまとめて１つにしてPRする
+
+作業ブランチをチェックアウト
+
+```
+$ git checkout -b feature/work origin/develop 
+```
+
+git add や commit などして作業完了（コミットが多数生成したとする）
+
+Pull Request用ブランチをチェックアウト
+
+```
+$ git fetch
+$ git checkout -b feature/work_pr origin/develop
+```
+
+作業ブランチをマージ
+
+```
+$ git merge --squash feature/work
+```
+
+必要な時に手動マージ作業し、Pull Requestに出すコミットを作成
+
+```
+$ git commit -m "merged"
+$ git push origin feature/work_pr
+```
+
