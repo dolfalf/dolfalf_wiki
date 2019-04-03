@@ -56,6 +56,8 @@ newArray // [1,2]
 もっと詳しく。。。
 [RxSwift Observable生成関数まとめ](https://qiita.com/moaible/items/de94c574b25ea4f0ef17)
 
+---
+
 - Single
 
 **性質**
