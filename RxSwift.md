@@ -56,7 +56,63 @@ newArray // [1,2]
 もっと詳しく。。。
 [RxSwift Observable生成関数まとめ](https://qiita.com/moaible/items/de94c574b25ea4f0ef17)
 
+- Single
 
+**性質**
+
+1度だけ onSuccsess または onError が流れる。 onComplete 、 onNext は流れない点に注意
+
+**使い所**
+
+レスポンスのあるAPIリクエスト
+
+プロミス的な使い方
+
+FirebaseのsingleEvent
+
+
+```
+public enum SingleEvent<Element> {
+    /// One and only sequence element is produced. (underlying observable sequence emits: `.next(Element)`, `.completed`)
+    case success(Element)
+
+    /// Sequence terminated with an error. (underlying observable sequence emits: `.error(Error)`)
+    case error(Swift.Error)
+}
+```
+
+- Completable
+
+**性質**
+
+1度だけ 、onComplete または onError が流れる。
+
+**使い所**
+
+レスポンスボディの無いAPIリクエスト
+
+
+```
+public enum CompletableEvent {
+    /// Sequence terminated with an error. (underlying observable sequence emits: `.error(Error)`)
+    case error(Swift.Error)
+
+    /// Sequence completed successfully.
+    case completed
+}
+```
+
+- Maybe
+
+**性質**
+
+SingleとCompleteが合わさったような性質。
+1度だけ、アイテムかerrorが流れるか、または全くイベントが流れない。
+(実装の際にはイベントが流れてこないことがある点も考慮が必要)
+
+**使い所**
+
+1回だけ表示したいイベントの条件とか？
 
 
 
