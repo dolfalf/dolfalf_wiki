@@ -9,7 +9,7 @@
 
 RxSwift
 
-[RxSwift](https://github.com/dolfalf/dolfalf_wiki/blob/master/RxSwift.md)
+[RxSwift.md](https://github.com/dolfalf/dolfalf_wiki/blob/master/RxSwift.md)
 
 ---
 맥 기본
