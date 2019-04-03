@@ -117,4 +117,17 @@ SingleとCompleteが合わさったような性質。
 1回だけ表示したいイベントの条件とか？
 
 
+## RxSwiftの機能カタログ
 
+- zip
+
+複数の Observable を順番に組み合わせます。ReavtiveX の説明はこちらです。
+
+CollectionType の拡張メソッドとして提供されています。
+
+```
+let observable1 = Observable.of(1, 2, 3, 4, 5)
+let observable2 = Observalbe.of("A", "B", "C", "D")
+let newObservable = [observable1, observable2].zip { "\($0[0])\($0[1])" }
+// "1A", "2B", "3C", "4D" を通知する
+```
