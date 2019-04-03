@@ -34,6 +34,17 @@ flatMapはmapのような動きをして、更に2重の配列を1重に直し�
 
 - filter
 
+filterは条件に合う要素を絞り込む時に使う！
+
+filterは、条件にマッチする要素のみを取り出したい場合に使用します。
+
+以下のコードでは配列内の3未満の数値を取り出しています。
+
+```
+let array = [1,2,3,4,5]
+let newArray = array.filter { $0 < 3 }
+newArray // [1,2]
+```
 
 ## RxSwift What??
 
