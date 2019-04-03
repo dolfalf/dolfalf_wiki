@@ -210,6 +210,8 @@ $ git commit -m "merged"
 $ git push origin feature/work_pr
 ```
 
+---
+
 ## git diffのいろいろ
 
 https://qiita.com/shibukk/items/8c9362a5bd399b9c56be
