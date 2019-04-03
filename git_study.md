@@ -210,3 +210,49 @@ $ git commit -m "merged"
 $ git push origin feature/work_pr
 ```
 
+## git diffのいろいろ
+
+https://qiita.com/shibukk/items/8c9362a5bd399b9c56be
+
+git pull する前にリモートとの変更点を見る
+
+```
+$ git diff HEAD..リモート名/ブランチ名
+```
+
+git push する前にリモートとの変更点を見る
+
+```
+$ git diff リモート名/ブランチ名..HEAD
+```
+
+git add する前に変更点を見る
+
+```
+$ git diff
+```
+
+git add した後に変更点を見る
+
+```
+$ git diff --cached
+```
+
+今回コミットした変更点を見る
+
+```
+$ git diff HEAD^
+```
+
+どれくらい変更したかだけを見る
+
+```
+$
+git diff --stat
+```
+
+ファイル名だけ見る
+
+```
+$ git diff --name-only
+```
