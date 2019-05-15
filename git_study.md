@@ -263,14 +263,13 @@ $ git diff --name-only
 
 git branch | grep 検索文字列
 
-
-　```
- git branch | grep 検索文字列
- ```
+```
+git branch | grep 検索文字列
+```
  
- git log --grep 検索文字列
+git log --grep 検索文字列
  
 ```
- git log --grep あああ
- ```
+git log --grep あああ
+```
  
