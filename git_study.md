@@ -258,3 +258,19 @@ git diff --stat
 ```
 $ git diff --name-only
 ```
+
+## 絞り込み
+
+git branch | grep 検索文字列
+
+
+　```
+ git branch | grep 検索文字列
+ ```
+ 
+ git log --grep 検索文字列
+ 
+```
+ git log --grep あああ
+ ```
+ 
